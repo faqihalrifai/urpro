@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universitas Teknologi Nusantara - Kampus Unggulan Berbasis Teknologi</title>
+    <meta name="description" content="Universitas Teknologi Nusantara (UTN) - Kampus teknologi terkemuka di Indonesia. Temukan program studi unggulan, fasilitas modern, dan peluang karir global. Daftar sekarang!">
+    <meta name="keywords" content="Universitas Teknologi Nusantara, UTN, kampus teknologi, perguruan tinggi, program studi, teknik, informatika, bisnis digital, karir, pendaftaran mahasiswa baru">
+    <meta name="author" content="Universitas Teknologi Nusantara">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3I6dtBng.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Placeholder for Critical CSS (CSS for above-the-fold content) */
+        /* Contoh: CSS untuk body, header, hero section awal */
+        body { font-family: 'Inter', sans-serif; }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        /* ... tambahkan CSS kritis lainnya di sini */
+    </style>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "EducationalOrganization",
+          "name": "Universitas Teknologi Nusantara",
+          "url": "https://www.utn.ac.id",
+          "logo": "https://www.utn.ac.id/assets/logo-utn.webp",
+          "description": "Universitas Teknologi Nusantara merupakan perguruan tinggi berbasis teknologi terkemuka di Indonesia dengan berbagai program studi unggulan seperti Ilmu Komputer, Teknik Elektro, dan Bisnis Digital. Siapkan masa depan Anda bersama kami.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jl. Inovasi No. 1",
+            "addressLocality": "Tangerang Selatan",
+            "addressRegion": "Banten",
+            "postalCode": "15345",
+            "addressCountry": "ID"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+62-21-8765-4321",
+            "contactType": "Customer Service",
+            "email": "info@utn.ac.id"
+          },
+          "sameAs": [
+            "https://www.facebook.com/utn.id",
+            "https://twitter.com/utn_official",
+            "https://www.instagram.com/utn.official",
+            "https://www.linkedin.com/school/universitas-teknologi-nusantara"
+          ]
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-500">
+
+    <header class="bg-white dark:bg-gray-800 shadow-sm fixed w-full z-40 transition-colors duration-300">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-2">
+                <img src="https://placehold.co/40x40/0ea5e9/ffffff?text=Logo" alt="Logo Universitas Teknologi Nusantara" class="h-8 md:h-10 w-auto" width="40" height="40">
+                <span class="text-xl md:text-2xl font-bold text-primary-600 dark:text-white">UTN</span>
+            </a>
+
+            <nav class="hidden md:flex space-x-6">
+                <a href="#beranda" class="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200" aria-current="page">Beranda</a>
+                <a href="#tentang" class="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Tentang</a>
+                <a href="#fakultas" class="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Fakultas</a>
+                <a href="#berita" class="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Berita</a>
+                <a href="#kontak" class="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Kontak</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <button id="darkModeToggle" class="p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-200" aria-label="Toggle Dark Mode">
+                    <i data-lucide="moon" class="w-6 h-6 dark:hidden block"></i>
+                    <i data-lucide="sun" class="w-6 h-6 hidden dark:block"></i>
+                </button>
+                <a href="#pendaftaran" class="hidden md:inline-flex items-center px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-md shadow hover:bg-primary-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
+                    Daftar Sekarang
+                </a>
+                <button id="mobileMenuButton" class="md:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-200" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open main menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-2 hidden transition-all duration-300 ease-in-out origin-top scale-y-0 opacity-0 transform">
+            <nav class="flex flex-col items-center space-y-2 py-4">
+                <a href="#beranda" class="block w-full text-center px-4 py-2 text-gray-700 hover:bg-primary-50 dark:text-gray-300 dark:hover:bg-gray-700 rounded-md transition-colors duration-200">Beranda</a>
+                <a href="#tentang" class="block w-full text-center px-4 py-2 text-gray-700 hover:bg-primary-50 dark:text-gray-300 dark:hover:bg-gray-700 rounded-md transition-colors duration-200">Tentang</a>
+                <a href="#fakultas" class="block w-full text-center px-4 py-2 text-gray-700 hover:bg-primary-50 dark:text-gray-300 dark:hover:bg-gray-700 rounded-md transition-colors duration-200">Fakultas</a>
+                <a href="#berita" class="block w-full text-center px-4 py-2 text-gray-700 hover:bg-primary-50 dark:text-gray-300 dark:hover:bg-gray-700 rounded-md transition-colors duration-200">Berita</a>
+                <a href="#kontak" class="block w-full text-center px-4 py-2 text-gray-700 hover:bg-primary-50 dark:text-gray-300 dark:hover:bg-gray-700 rounded-md transition-colors duration-200">Kontak</a>
+                <a href="#pendaftaran" class="mt-4 inline-flex items-center px-6 py-3 bg-primary-600 text-white text-base font-medium rounded-md shadow hover:bg-primary-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
+                    Daftar Sekarang
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="beranda" class="relative bg-gradient-to-r from-primary-500 to-primary-700 dark:from-primary-700 dark:to-primary-900 text-white py-24 md:py-32 lg:py-40 overflow-hidden min-h-screen flex items-center justify-center">
+            <div class="absolute inset-0">
+                <picture>
+                    <source srcset="https://placehold.co/1920x1080/0ea5e9/ffffff?text=Kampus+UTN.webp" type="image/webp">
+                    <img src="https://placehold.co/1920x1080/0ea5e9/ffffff?text=Kampus+UTN.jpg" alt="Kampus Universitas Teknologi Nusantara yang modern" class="w-full h-full object-cover opacity-30" width="1920" height="1080">
+                </picture>
+                <div class="absolute inset-0 bg-black opacity-40"></div>
+            </div>
+
+            <div class="container mx-auto px-4 text-center relative z-10" data-fade="true" data-scroll-in="true">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+                    Masa Depan Berawal di <br><span class="text-primary-200">Universitas Teknologi Nusantara</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90 animate-fade-in-up delay-200">
+                    Siapkan diri Anda untuk berkarir di era digital dengan program studi inovatif dan fasilitas modern.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in-up delay-400">
+                    <a href="#pendaftaran" class="px-8 py-4 bg-white text-primary-600 font-bold rounded-full shadow-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-primary-300">Daftar Sekarang</a>
+                    <a href="#fakultas" class="px-8 py-4 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-primary-600 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-white">Pelajari Program Studi</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="tentang" class="py-16 md:py-24 bg-white dark:bg-gray-800 transition-colors duration-300">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-12" data-fade="true" data-scroll-in="true">Tentang Universitas Teknologi Nusantara</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1" data-fade="true" data-scroll-in="true">
+                        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                            Universitas Teknologi Nusantara (UTN) adalah pionir dalam pendidikan tinggi berbasis teknologi di Indonesia. Didirikan dengan visi untuk mencetak talenta-talenta unggul yang siap menghadapi tantangan global, UTN berkomitmen menyediakan kurikulum inovatif dan fasilitas terkini.
+                        </p>
+                        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                            Kami percaya bahwa pendidikan harus relevan dengan kebutuhan industri masa kini dan masa depan. Oleh karena itu, UTN menghadirkan pengalaman belajar yang kolaboratif, didukung oleh pengajar berpengalaman dan kemitraan erat dengan berbagai perusahaan teknologi terkemuka.
+                        </p>
+                        <a href="#visimisi" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold transition-colors duration-200">
+                            Lihat Visi & Misi Kami
+                            <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+                        </a>
+                    </div>
+                    <div class="order-1 md:order-2" data-fade="true" data-scroll-in="true" data-delay="200">
+                        <picture>
+                            <source srcset="https://placehold.co/1470x800/0ea5e9/ffffff?text=Tentang+UTN.webp" type="image/webp">
+                            <img src="https://placehold.co/1470x800/0ea5e9/ffffff?text=Tentang+UTN.jpg" alt="Mahasiswa sedang berdiskusi di area kampus UTN" loading="lazy" class="rounded-xl shadow-lg w-full h-auto object-cover" width="1470" height="800">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-12" data-fade="true" data-scroll-in="true">Mengapa Memilih Universitas Teknologi Nusantara?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-8 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl" data-fade="true" data-scroll-in="true">
+                        <i data-lucide="award" class="w-16 h-16 text-primary-600 mx-auto mb-6"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Kurikulum Inovatif</h3>
+                        <p class="text-gray-700 dark:text-gray-300">Kurikulum yang selalu diperbarui sesuai perkembangan teknologi dan kebutuhan industri.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-8 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl" data-fade="true" data-scroll-in="true" data-delay="100">
+                        <i data-lucide="building-2" class="w-16 h-16 text-primary-600 mx-auto mb-6"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Fasilitas Modern</h3>
+                        <p class="text-gray-700 dark:text-gray-300">Laboratorium canggih, ruang kuliah interaktif, dan lingkungan belajar yang nyaman.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-8 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl" data-fade="true" data-scroll-in="true" data-delay="200">
+                        <i data-lucide="briefcase" class="w-16 h-16 text-primary-600 mx-auto mb-6"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Prospek Karir Luas</h3>
+                        <p class="text-gray-700 dark:text-gray-300">Lulusan siap bersaing di pasar kerja global dengan dukungan jaringan industri yang kuat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="visimisi" class="py-16 md:py-24 bg-white dark:bg-gray-800 transition-colors duration-300">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-12" data-fade="true" data-scroll-in="true">Visi & Misi Universitas Teknologi Nusantara</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="bg-primary-50 dark:bg-gray-700 rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-xl" data-fade="true" data-scroll-in="true">
+                        <h3 class="text-2xl font-bold text-primary-700 dark:text-primary-300 mb-6 flex items-center">
+                            <i data-lucide="eye" class="w-8 h-8 mr-3"></i> Visi
+                        </h3>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                            Menjadi perguruan tinggi terkemuka di Asia Tenggara dalam pengembangan ilmu pengetahuan dan teknologi yang berdaya saing global, serta menghasilkan lulusan yang inovatif, berintegritas, dan berkontribusi nyata bagi masyarakat.
+                        </p>
+                    </div>
+                    <div class="bg-primary-50 dark:bg-gray-700 rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-xl" data-fade="true" data-scroll-in="true" data-delay="100">
+                        <h3 class="text-2xl font-bold text-primary-700 dark:text-primary-300 mb-6 flex items-center">
+                            <i data-lucide="target" class="w-8 h-8 mr-3"></i> Misi
+                        </h3>
+                        <ul class="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-3 leading-relaxed">
+                            <li>Menyelenggarakan pendidikan berkualitas yang relevan dengan perkembangan IPTEK dan kebutuhan industri.</li>
+                            <li>Melakukan penelitian inovatif yang berkontribusi pada pengembangan ilmu pengetahuan dan solusi masalah nyata.</li>
+                            <li>Melaksanakan pengabdian kepada masyarakat melalui penerapan IPTEK untuk kesejahteraan bersama.</li>
+                            <li>Membangun lingkungan akademik yang kondusif, inklusif, dan menjunjung tinggi nilai-nilai etika.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fakultas" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-12" data-fade="true" data-scroll-in="true">Fakultas & Program Studi Unggulan</h2>
+                <div id="program-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    </div>
+            </div>
+        </section>
+
+        <section id="testimoni" class="py-16 md:py-24 bg-white dark:bg-gray-800 transition-colors duration-300">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-12" data-fade="true" data-scroll-in="true">Apa Kata Mereka Tentang UTN?</h2>
+                <div class="relative">
+                    <div id="testimonial-slider" class="flex overflow-hidden space-x-8 scroll-smooth transition-transform duration-500 ease-in-out" role="group" aria-live="polite">
+                        </div>
+                    <button id="prevTestimonial" class="absolute left-0 top-1/2 -translate-y-1/2 p-3 rounded-full bg-primary-100 dark:bg-gray-700 text-primary-600 dark:text-gray-300 hover:bg-primary-200 dark:hover:bg-gray-600 shadow-md transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed z-10" aria-label="Previous Testimonial">
+                        <i data-lucide="arrow-left" class="w-6 h-6"></i>
+                    </button>
+                    <button id="nextTestimonial" class="absolute right-0 top-1/2 -translate-y-1/2 p-3 rounded-full bg-primary-100 dark:bg-gray-700 text-primary-600 dark:text-gray-300 hover:bg-primary-200 dark:hover:bg-gray-600 shadow-md transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed z-10" aria-label="Next Testimonial">
+                        <i data-lucide="arrow-right" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="berita" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-12" data-fade="true" data-scroll-in="true">Berita & Acara Terbaru</h2>
+                <div id="news-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    </div>
+                <div class="text-center mt-12" data-fade="true" data-scroll-in="true">
+                    <a href="#" class="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-md shadow hover:bg-primary-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
+                        Lihat Semua Berita
+                        <i data-lucide="external-link" class="ml-2 w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-primary-600 dark:bg-primary-800 text-white py-16 md:py-24">
+            <div class="container mx-auto px-4 text-center" data-fade="true" data-scroll-in="true">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Siap Bergabung dengan Keluarga Besar UTN?</h2>
+                <p class="text-lg md:text-xl opacity-90 mb-10 max-w-2xl mx-auto">
+                    Daftarkan diri Anda sekarang dan mulailah perjalanan akademik yang transformatif bersama kami.
+                </p>
+                <a href="#pendaftaran" class="inline-flex items-center px-8 py-4 bg-white text-primary-600 font-bold rounded-full shadow-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-primary-300">
+                    <i data-lucide="graduation-cap" class="mr-3 w-6 h-6"></i> Daftar Sekarang!
+                </a>
+            </div>
+        </section>
+
+        <section id="pendaftaran" class="py-16 md:py-24 bg-white dark:bg-gray-800 transition-colors duration-300">
+            <div class="container mx-auto px-4 max-w-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-12" data-fade="true" data-scroll-in="true">Formulir Pendaftaran Mahasiswa Baru</h2>
+                <div class="bg-gray-50 dark:bg-gray-900 rounded-xl shadow-lg p-8 md:p-10" data-fade="true" data-scroll-in="true">
+                    <form id="registrationForm" class="space-y-6">
+                        <div>
+                            <label for="nama" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white transition-all duration-200" placeholder="Nama Lengkap Anda" required>
+                        </div>
+                        <div>
+                            <label for="email_daftar" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email_daftar" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white transition-all duration-200" placeholder="contoh@email.com" required>
+                        </div>
+                        <div>
+                            <label for="telepon" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Nomor Telepon</label>
+                            <input type="tel" id="telepon" name="telepon" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white transition-all duration-200" placeholder="Misal: 081234567890" required>
+                        </div>
+                        <div>
+                            <label for="program_studi" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Pilih Program Studi</label>
+                            <select id="program_studi" name="program_studi" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white appearance-none transition-all duration-200" required>
+                                <option value="">Pilih Program Studi</option>
+                                <option value="ilmu_komputer">Ilmu Komputer</option>
+                                <option value="teknik_elektro">Teknik Elektro</option>
+                                <option value="bisnis_digital">Bisnis Digital</option>
+                                <option value="desain_komunikasi_visual">Desain Komunikasi Visual</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg shadow-md hover:bg-primary-700 transition-colors duration-200 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900" id="submitRegistration">
+                            <span id="registrationButtonText">Daftar Sekarang</span>
+                            <i data-lucide="loader-2" class="ml-2 w-5 h-5 animate-spin hidden" id="registrationSpinner"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+            <div class="container mx-auto px-4 max-w-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-12" data-fade="true" data-scroll-in="true">Hubungi Kami</h2>
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 md:p-10" data-fade="true" data-scroll-in="true">
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="nama_kontak" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Nama Anda</label>
+                            <input type="text" id="nama_kontak" name="nama" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white transition-all duration-200" placeholder="Nama Lengkap Anda" required>
+                        </div>
+                        <div>
+                            <label for="email_kontak" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email Anda</label>
+                            <input type="email" id="email_kontak" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white transition-all duration-200" placeholder="contoh@email.com" required>
+                        </div>
+                        <div>
+                            <label for="pesan" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Pesan Anda</label>
+                            <textarea id="pesan" name="pesan" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white transition-all duration-200" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg shadow-md hover:bg-primary-700 transition-colors duration-200 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900" id="submitContact">
+                            <span id="contactButtonText">Kirim Pesan</span>
+                            <i data-lucide="loader-2" class="ml-2 w-5 h-5 animate-spin hidden" id="contactSpinner"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-16 md:py-24 bg-white dark:bg-gray-800 transition-colors duration-300 hidden">
+            <div class="container mx-auto px-4 max-w-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-12" data-fade="true" data-scroll-in="true">Pertanyaan Umum</h2>
+                <div class="space-y-4">
+                    <div class="bg-gray-50 dark:bg-gray-900 rounded-lg shadow-sm">
+                        <button class="w-full text-left p-5 font-semibold text-gray-800 dark:text-white flex justify-between items-center" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">
+                            Bagaimana cara mendaftar di UTN?
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+                        </button>
+                        <div id="faq-answer-1" role="region" aria-labelledby="faq-question-1" class="px-5 pb-5 text-gray-700 dark:text-gray-300 hidden">
+                            Anda dapat mendaftar langsung melalui formulir pendaftaran online di website ini atau mengunjungi kampus kami.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 dark:bg-gray-900 text-gray-300 py-12 md:py-16">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="md:col-span-2">
+                <a href="#" class="flex items-center space-x-2 mb-4">
+                    <img src="https://placehold.co/40x40/0ea5e9/ffffff?text=Logo" alt="Logo Universitas Teknologi Nusantara" class="h-8 w-auto" width="40" height="40">
+                    <span class="text-xl font-bold text-white">UTN</span>
+                </a>
+                <p class="text-sm leading-relaxed mb-4">
+                    Universitas Teknologi Nusantara adalah institusi pendidikan tinggi yang berdedikasi untuk mencetak inovator dan pemimpin di bidang teknologi.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="https://facebook.com/utn.id" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-200" aria-label="Facebook">
+                        <i data-lucide="facebook" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://twitter.com/utn_official" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-200" aria-label="Twitter">
+                        <i data-lucide="twitter" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://instagram.com/utn.official" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-200" aria-label="Instagram">
+                        <i data-lucide="instagram" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://linkedin.com/school/universitas-teknologi-nusantara" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-200" aria-label="LinkedIn">
+                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Link Cepat</h3>
+                <ul class="space-y-2">
+                    <li><a href="#beranda" class="text-gray-400 hover:text-white transition-colors duration-200">Beranda</a></li>
+                    <li><a href="#tentang" class="text-gray-400 hover:text-white transition-colors duration-200">Tentang Kami</a></li>
+                    <li><a href="#fakultas" class="text-gray-400 hover:text-white transition-colors duration-200">Fakultas & Program</a></li>
+                    <li><a href="#berita" class="text-gray-400 hover:text-white transition-colors duration-200">Berita & Acara</a></li>
+                    <li><a href="#kontak" class="text-gray-400 hover:text-white transition-colors duration-200">Hubungi Kami</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Kontak Kami</h3>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <i data-lucide="map-pin" class="w-5 h-5 mr-2 text-gray-400"></i>
+                        <span class="text-gray-400">Jl. Inovasi No. 1, Tangerang Selatan</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="phone" class="w-5 h-5 mr-2 text-gray-400"></i>
+                        <span class="text-gray-400">+62 21 8765 4321</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="mail" class="w-5 h-5 mr-2 text-gray-400"></i>
+                        <span class="text-gray-400">info@utn.ac.id</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 dark:border-gray-700 mt-8 pt-8 text-center text-gray-500 text-sm">
+            &copy; <span id="currentYear"></span> Universitas Teknologi Nusantara. Hak Cipta Dilindungi.
+        </div>
+    </footer>
+
+    <div id="custom-notification-container" class="fixed top-4 right-4 z-50 space-y-3 pointer-events-none">
+        </div>
+
+    <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden transition-opacity duration-300 opacity-0" aria-modal="true" role="dialog" aria-labelledby="loginModalTitle">
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-8 w-full max-w-sm transform transition-all duration-300 scale-95 opacity-0 relative">
+            <button id="closeLoginModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200" aria-label="Close login modal">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <h3 id="loginModalTitle" class="text-2xl font-bold text-gray-800 dark:text-white mb-6 text-center">Login Anggota</h3>
+            <form id="loginForm" class="space-y-4">
+                <div>
+                    <label for="username" class="sr-only">Username</label>
+                    <input type="text" id="username" name="username" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white" placeholder="Username" required>
+                </div>
+                <div>
+                    <label for="password" class="sr-only">Password</label>
+                    <input type="password" id="password" name="password" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white" placeholder="Password" required>
+                </div>
+                <button type="submit" class="w-full px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg shadow-md hover:bg-primary-700 transition-colors duration-200 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900" id="submitLogin">
+                    <span id="loginButtonText">Login</span>
+                    <i data-lucide="loader-2" class="ml-2 w-5 h-5 animate-spin hidden" id="loginSpinner"></i>
+                </button>
+            </form>
+            <p class="text-center text-sm text-gray-600 dark:text-gray-400 mt-4">
+                Lupa password? <a href="#" class="text-primary-600 hover:underline">Reset di sini</a>
+            </p>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script defer>
+        // Tailwind CSS Konfigurasi (Idealnya di main.js atau file konfigurasi terpisah)
+        tailwind.config = {
+            darkMode: 'class', // Enable dark mode based on 'dark' class on <html>
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                            950: '#172554',
+                        },
+                    },
+                },
+            },
+            plugins: [],
+        };
+
+        // --- Data Mockup (Idealnya dari API atau CMS) ---
+        const programsData = [
+            {
+                id: 1,
+                name: 'Ilmu Komputer',
+                icon: 'laptop', // Lucide icon name
+                description: 'Mempelajari dasar-dasar komputasi, pengembangan perangkat lunak, dan kecerdasan buatan.',
+                image: 'https://placehold.co/600x400/0ea5e9/ffffff?text=Ilmu+Komputer',
+            },
+            {
+                id: 2,
+                name: 'Teknik Elektro',
+                icon: 'lightbulb',
+                description: 'Fokus pada sistem tenaga, elektronika, telekomunikasi, dan teknik kendali.',
+                image: 'https://placehold.co/600x400/0ea5e9/ffffff?text=Teknik+Elektro',
+            },
+            {
+                id: 3,
+                name: 'Bisnis Digital',
+                icon: 'shopping-bag',
+                description: 'Menggabungkan strategi bisnis dengan teknologi digital untuk pasar modern.',
+                image: 'https://placehold.co/600x400/0ea5e9/ffffff?text=Bisnis+Digital',
+            },
+            {
+                id: 4,
+                name: 'Desain Komunikasi Visual',
+                icon: 'paint-brush',
+                description: 'Menciptakan solusi visual kreatif untuk komunikasi efektif di berbagai media.',
+                image: 'https://placehold.co/600x400/0ea5e9/ffffff?text=Desain+Komunikasi+Visual',
+            },
+            {
+                id: 5,
+                name: 'Sistem Informasi',
+                icon: 'server',
+                description: 'Mempelajari perancangan, pengembangan, dan pengelolaan sistem informasi untuk organisasi.',
+                image: 'https://placehold.co/600x400/0ea5e9/ffffff?text=Sistem+Informasi',
+            },
+            {
+                id: 6,
+                name: 'Teknik Industri',
+                icon: 'factory',
+                description: 'Mengoptimalkan proses produksi dan manajemen sistem dalam industri.',
+                image: 'https://placehold.co/600x400/0ea5e9/ffffff?text=Teknik+Industri',
+            }
+        ];
+
+        const testimonialsData = [
+            {
+                id: 1,
+                name: 'Andi Pratama',
+                title: 'Alumni Ilmu Komputer',
+                avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+                quote: 'Kurikulum UTN sangat relevan dengan industri. Saya langsung mendapatkan pekerjaan setelah lulus berkat ilmu yang diajarkan dan jaringan yang saya bangun di sini.'
+            },
+            {
+                id: 2,
+                name: 'Budi Santoso',
+                title: 'Mahasiswa Teknik Elektro',
+                avatar: 'https://randomuser.me/api/portraits/men/33.jpg',
+                quote: 'Fasilitas laboratorium di UTN sangat lengkap dan modern. Dosen-dosennya juga sangat kompeten dan selalu siap membantu.'
+            },
+            {
+                id: 3,
+                name: 'Citra Dewi',
+                title: 'Alumni Bisnis Digital',
+                avatar: 'https://randomuser.me/api/portraits/women/34.jpg',
+                quote: 'Program Bisnis Digital di UTN membuka wawasan saya tentang bagaimana teknologi dapat diterapkan dalam bisnis. Sangat direkomendasikan!'
+            },
+            {
+                id: 4,
+                name: 'Dewi Lestari',
+                title: 'Mahasiswa Ilmu Komputer',
+                avatar: 'https://randomuser.me/api/portraits/women/35.jpg',
+                quote: 'Lingkungan belajar di UTN sangat mendukung. Banyak kesempatan untuk berkolaborasi dan mengembangkan proyek-proyek inovatif.'
+            },
+            {
+                id: 5,
+                name: 'Eko Nurcahyo',
+                title: 'Alumni Teknik Elektro',
+                avatar: 'https://randomuser.me/api/portraits/men/36.jpg',
+                quote: 'Saya sangat terbantu dengan Career Center UTN yang memberikan bimbingan karir dan menghubungkan kami dengan perusahaan-perusahaan besar.'
+            }
+        ];
+
+        const newsData = [
+            {
+                id: 1,
+                title: 'UTN Selenggarakan Webinar Nasional "Inovasi AI untuk Indonesia"',
+                date: '10 Juli 2025',
+                image: 'https://placehold.co/600x400/0ea5e9/ffffff?text=Webinar+AI',
+                shortDesc: 'Webinar ini menghadirkan pakar AI dari berbagai industri untuk membahas potensi dan implementasi AI di Indonesia.',
+                fullContent: 'Webinar Nasional dengan tema "Inovasi AI untuk Indonesia" sukses diselenggarakan oleh Universitas Teknologi Nusantara pada tanggal 10 Juli 2025. Acara ini dihadiri oleh ratusan peserta dari berbagai kalangan, termasuk mahasiswa, akademisi, dan praktisi industri. Pembicara utama dalam webinar ini adalah Prof. Dr. Budi Santoso, seorang pakar AI terkemuka, yang memaparkan tentang perkembangan terbaru dalam teknologi kecerdasan buatan dan bagaimana AI dapat menjadi motor penggerak inovasi di berbagai sektor di Indonesia. Selain itu, ada juga sesi panel diskusi yang melibatkan perwakilan dari startup teknologi dan perusahaan multinasional yang membahas tantangan dan peluang implementasi AI di dunia nyata. Peserta sangat antusias mengikuti setiap sesi, terbukti dari banyaknya pertanyaan interaktif yang diajukan. UTN berkomitmen untuk terus menjadi wadah diskusi dan pengembangan ilmu pengetahuan, khususnya di bidang AI, demi kemajuan bangsa.'
+            },
+            {
+                id: 2,
+                title: 'Kunjungan Industri Mahasiswa Bisnis Digital ke Startup Ternama',
+                date: '05 Juli 2025',
+                image: 'https://placehold.co/600x400/0ea5e9/ffffff?text=Kunjungan+Industri',
+                shortDesc: 'Mahasiswa Bisnis Digital UTN melakukan kunjungan ke salah satu startup e-commerce terbesar di Jakarta untuk belajar langsung.',
+                fullContent: 'Program studi Bisnis Digital Universitas Teknologi Nusantara kembali mengadakan kunjungan industri, kali ini ke markas salah satu startup e-commerce terbesar di Jakarta pada tanggal 5 Juli 2025. Kunjungan ini bertujuan untuk memberikan pengalaman langsung kepada mahasiswa tentang operasional bisnis digital, strategi pemasaran online, hingga budaya kerja di perusahaan teknologi. Rombongan mahasiswa disambut hangat oleh tim manajemen startup, yang kemudian mempresentasikan perjalanan perusahaan, tantangan yang dihadapi, dan bagaimana mereka berinovasi di pasar yang kompetitif. Mahasiswa juga diajak berkeliling kantor dan berinteraksi langsung dengan para profesional di berbagai departemen. Kegiatan semacam ini sangat penting untuk membekali mahasiswa dengan pengetahuan praktis dan koneksi industri, sehingga mereka lebih siap menghadapi dunia kerja setelah lulus.'
+            },
+            {
+                id: 3,
+                title: 'UTN Raih Penghargaan "Kampus Inovatif Terbaik 2025"',
+                date: '01 Juli 2025',
+                image: 'https://placehold.co/600x400/0ea5e9/ffffff?text=Penghargaan',
+                shortDesc: 'Universitas Teknologi Nusantara diakui sebagai kampus terdepan dalam inovasi pendidikan dan riset teknologi.',
+                fullContent: 'Universitas Teknologi Nusantara (UTN) dengan bangga mengumumkan pencapaian prestisius sebagai "Kampus Inovatif Terbaik 2025" dalam ajang penghargaan tahunan yang diselenggarakan oleh Asosiasi Perguruan Tinggi Teknologi Indonesia. Penghargaan ini diberikan atas komitmen UTN dalam mendorong inovasi melalui kurikulum yang adaptif, fasilitas riset canggih, dan kolaborasi aktif dengan industri dan masyarakat. Rektor UTN, Prof. Dr. Sri Rahayu, menyatakan bahwa penghargaan ini adalah hasil kerja keras seluruh civitas akademika dan menjadi motivasi untuk terus meningkatkan kualitas pendidikan dan kontribusi bagi bangsa. UTN akan terus berinvestasi dalam penelitian dan pengembangan, serta menciptakan lingkungan yang mendukung mahasiswa untuk berpikir kreatif dan menghasilkan solusi-solusi inovatif bagi tantangan masa depan.'
+            }
+        ];
+
+        // --- Inisialisasi Lucide Icons ---
+        // Pastikan Lucide diinisialisasi setelah semua ikon di DOM ada
+        window.addEventListener('load', () => {
+            lucide.createIcons();
+        });
+
+
+        // --- Dark Mode Toggle ---
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const htmlElement = document.documentElement;
+
+        // Set initial mode based on localStorage or system preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            htmlElement.classList.add(savedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            htmlElement.classList.add('dark');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                htmlElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+            // Re-render lucide icons to ensure correct fill/stroke for dark mode
+            lucide.createIcons();
+        });
+
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+            document.body.classList.toggle('overflow-hidden'); // Prevent scroll on body when menu is open
+
+            // Add/remove transform for animation
+            if (!isExpanded) {
+                mobileMenu.classList.remove('scale-y-0', 'opacity-0');
+                mobileMenu.classList.add('scale-y-100', 'opacity-100');
+            } else {
+                mobileMenu.classList.remove('scale-y-100', 'opacity-100');
+                mobileMenu.classList.add('scale-y-0', 'opacity-0');
+            }
+            // Toggle icon
+            const menuIcon = mobileMenuButton.querySelector('i');
+            if (menuIcon.dataset.lucide === 'menu') {
+                menuIcon.setAttribute('data-lucide', 'x');
+            } else {
+                menuIcon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons(); // Re-render icon
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden', 'scale-y-0', 'opacity-0');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('overflow-hidden');
+                // Reset icon
+                const menuIcon = mobileMenuButton.querySelector('i');
+                menuIcon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+
+
+        // --- Smooth Scrolling for Anchor Links ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // --- Animate on Scroll (data-fade, data-scroll-in) ---
+        const faders = document.querySelectorAll('[data-fade]');
+        const sliders = document.querySelectorAll('[data-scroll-in]');
+
+        const appearOptions = {
+            threshold: 0.2, // Trigger when 20% of the element is visible
+            rootMargin: "0px 0px -50px 0px" // Adjust to trigger slightly before reaching element
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('fade-in-active'); // Add a class to trigger CSS animation
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            fader.classList.add('opacity-0', 'transition-all', 'duration-1000', 'ease-out');
+            appearOnScroll.observe(fader);
+        });
+        sliders.forEach(slider => {
+            slider.classList.add('translate-y-10', 'opacity-0', 'transition-all', 'duration-1000', 'ease-out');
+            appearOnScroll.observe(slider);
+        });
+
+        // --- Custom Notification System ---
+        function showNotification(message, type = 'info', duration = 3000) {
+            const container = document.getElementById('custom-notification-container');
+            const notification = document.createElement('div');
+            notification.className = `p-4 rounded-lg shadow-md flex items-center transition-all duration-300 transform -translate-x-full opacity-0 pointer-events-auto`;
+
+            let bgColor, textColor, borderColor, iconHtml;
+            switch (type) {
+                case 'success':
+                    bgColor = 'bg-green-100 dark:bg-green-800';
+                    textColor = 'text-green-800 dark:text-green-200';
+                    borderColor = 'border-l-4 border-green-500';
+                    iconHtml = '<i data-lucide="check-circle" class="w-6 h-6 mr-3 text-green-600 dark:text-green-400"></i>';
+                    break;
+                case 'error':
+                    bgColor = 'bg-red-100 dark:bg-red-800';
+                    textColor = 'text-red-800 dark:text-red-200';
+                    borderColor = 'border-l-4 border-red-500';
+                    iconHtml = '<i data-lucide="x-circle" class="w-6 h-6 mr-3 text-red-600 dark:text-red-400"></i>';
+                    break;
+                case 'info':
+                default:
+                    bgColor = 'bg-blue-100 dark:bg-blue-800';
+                    textColor = 'text-blue-800 dark:text-blue-200';
+                    borderColor = 'border-l-4 border-blue-500';
+                    iconHtml = '<i data-lucide="info" class="w-6 h-6 mr-3 text-blue-600 dark:text-blue-400"></i>';
+                    break;
+            }
+
+            notification.classList.add(bgColor, textColor, borderColor);
+            notification.innerHTML = `
+                ${iconHtml}
+                <div>${message}</div>
+                <button class="ml-auto text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" aria-label="Close notification">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            `;
+            container.appendChild(notification);
+            lucide.createIcons(); // Re-render icons for notification
+
+            // Animate in
+            setTimeout(() => {
+                notification.classList.remove('-translate-x-full', 'opacity-0');
+                notification.classList.add('translate-x-0', 'opacity-100');
+            }, 50); // Small delay to allow render
+
+            // Animate out and remove
+            const timeoutId = setTimeout(() => {
+                notification.classList.remove('translate-x-0', 'opacity-100');
+                notification.classList.add('-translate-x-full', 'opacity-0');
+                notification.addEventListener('transitionend', () => notification.remove());
+            }, duration);
+
+            // Close button functionality
+            notification.querySelector('button').addEventListener('click', () => {
+                clearTimeout(timeoutId); // Prevent it from disappearing twice
+                notification.classList.remove('translate-x-0', 'opacity-100');
+                notification.classList.add('-translate-x-full', 'opacity-0');
+                notification.addEventListener('transitionend', () => notification.remove());
+            });
+        }
+
+
+        // --- Dynamic Content Rendering (Programs, Testimonials, News) ---
+
+        // Render Programs
+        const programList = document.getElementById('program-list');
+        programsData.forEach((program, index) => {
+            const programCard = document.createElement('div');
+            programCard.className = `bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl group`
+            programCard.setAttribute('data-fade', 'true');
+            programCard.setAttribute('data-scroll-in', 'true');
+            programCard.setAttribute('data-delay', index * 50); // Stagger animation
+
+            programCard.innerHTML = `
+                <picture>
+                    <source srcset="${program.image}.webp" type="image/webp">
+                    <img src="${program.image}.jpg" alt="${program.name} Program Studi" class="w-full h-40 object-cover rounded-md mb-6" loading="lazy" width="600" height="400">
+                </picture>
+                <i data-lucide="${program.icon}" class="w-16 h-16 text-primary-600 mx-auto mb-6 group-hover:scale-110 transition-transform duration-200"></i>
+                <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">${program.name}</h3>
+                <p class="text-gray-700 dark:text-gray-300">${program.description}</p>
+            `;
+            programList.appendChild(programCard);
+        });
+
+        // Render Testimonials
+        const testimonialSlider = document.getElementById('testimonial-slider');
+        testimonialsData.forEach((testimonial, index) => {
+            const testimonialCard = document.createElement('div');
+            testimonialCard.className = `flex-none w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333%-21.333px)] bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-xl`
+            testimonialCard.setAttribute('data-fade', 'true');
+            testimonialCard.setAttribute('data-scroll-in', 'true');
+            testimonialCard.setAttribute('data-delay', index * 50); // Stagger animation
+
+            testimonialCard.innerHTML = `
+                <div class="flex items-center mb-6">
+                    <img src="${testimonial.avatar}" alt="${testimonial.name}'s Avatar" class="w-16 h-16 rounded-full object-cover mr-4" width="64" height="64">
+                    <div>
+                        <p class="font-semibold text-gray-800 dark:text-white">${testimonial.name}</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">${testimonial.title}</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 dark:text-gray-300 italic leading-relaxed">"${testimonial.quote}"</p>
+            `;
+            testimonialSlider.appendChild(testimonialCard);
+        });
+
+        // Testimonial Slider Logic
+        const prevTestimonialButton = document.getElementById('prevTestimonial');
+        const nextTestimonialButton = document.getElementById('nextTestimonial');
+        let currentTestimonialIndex = 0;
+
+        function updateTestimonialSlider() {
+            // Recalculate visibleCards and maxIndex on resize
+            const visibleCards = (window.innerWidth >= 1024) ? 3 : (window.innerWidth >= 768) ? 2 : 1;
+            const maxIndex = testimonialsData.length - visibleCards;
+
+            // Ensure currentTestimonialIndex does not exceed maxIndex if window resized smaller
+            if (currentTestimonialIndex > maxIndex) {
+                currentTestimonialIndex = maxIndex;
+            }
+            if (currentTestimonialIndex < 0) { // In case maxIndex becomes negative (e.g. 1 card and 3 visible)
+                currentTestimonialIndex = 0;
+            }
+
+            const cardWidth = testimonialSlider.children[0] ? testimonialSlider.children[0].offsetWidth : 0;
+            const gap = 32; // Corresponds to Tailwind's gap-8 (2rem = 32px)
+            const offset = currentTestimonialIndex * (cardWidth + gap);
+            testimonialSlider.style.transform = `translateX(-${offset}px)`;
+
+            // Enable/disable buttons based on current index
+            prevTestimonialButton.disabled = currentTestimonialIndex === 0;
+            nextTestimonialButton.disabled = currentTestimonialIndex >= maxIndex;
+        }
+
+        // Testimonial Slider Navigation
+        prevTestimonialButton.addEventListener('click', () => {
+            currentTestimonialIndex = Math.max(0, currentTestimonialIndex - 1);
+            updateTestimonialSlider();
+        });
+
+        nextTestimonialButton.addEventListener('click', () => {
+            const visibleCards = (window.innerWidth >= 1024) ? 3 : (window.innerWidth >= 768) ? 2 : 1;
+            const maxIndex = testimonialsData.length - visibleCards;
+            currentTestimonialIndex = Math.min(maxIndex, currentTestimonialIndex + 1);
+            updateTestimonialSlider();
+        });
+
+        // Event listener for window resize to update slider
+        window.addEventListener('resize', () => {
+            updateTestimonialSlider();
+        });
+
+        // Initial update for slider
+        updateTestimonialSlider();
+
+
+        // Render News
+        const newsList = document.getElementById('news-list');
+        newsData.forEach((newsItem, index) => {
+            const newsCard = document.createElement('div');
+            newsCard.className = `bg-white dark:bg-gray-800 rounded-xl shadow-md transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl overflow-hidden`
+            newsCard.setAttribute('data-fade', 'true');
+            newsCard.setAttribute('data-scroll-in', 'true');
+            newsCard.setAttribute('data-delay', index * 50); // Stagger animation
+
+            newsCard.innerHTML = `
+                <picture>
+                    <source srcset="${newsItem.image}.webp" type="image/webp">
+                    <img src="${newsItem.image}.jpg" alt="${newsItem.title}" class="w-full h-48 object-cover" loading="lazy" width="600" height="400">
+                </picture>
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">${newsItem.date}</p>
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">${newsItem.title}</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">${newsItem.shortDesc}</p>
+                    <button class="inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold transition-colors duration-200 read-more-button" data-news-id="${newsItem.id}">
+                        Baca Selengkapnya
+                        <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+                    </button>
+                </div>
+            `;
+            newsList.appendChild(newsCard);
+        });
+
+        // --- News Read More Modal ---
+        const newsModal = document.createElement('div');
+        newsModal.id = 'newsModal';
+        newsModal.className = 'fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 hidden opacity-0 transition-opacity duration-300';
+        newsModal.setAttribute('role', 'dialog');
+        newsModal.setAttribute('aria-labelledby', 'newsModalTitle');
+        newsModal.innerHTML = `
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6 md:p-8 w-full max-w-3xl transform scale-95 opacity-0 transition-all duration-300 relative max-h-[90vh] overflow-y-auto">
+                <button id="closeNewsModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200" aria-label="Close news article">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+                <h3 id="newsModalTitle" class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white mb-4"></h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-6" id="newsModalDate"></p>
+                <picture>
+                    <source srcset="" type="image/webp" id="newsModalImageWebp">
+                    <img src="" alt="" class="w-full h-56 object-cover rounded-md mb-6" id="newsModalImage" width="600" height="400">
+                </picture>
+                <div class="text-gray-700 dark:text-gray-300 leading-relaxed space-y-4" id="newsModalContent"></div>
+            </div>
+        `;
+        document.body.appendChild(newsModal);
+
+
+        // Event listener for all "Baca Selengkapnya" buttons
+        document.querySelectorAll('.read-more-button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const newsId = parseInt(e.target.dataset.newsId);
+                const newsItem = newsData.find(item => item.id === newsId);
+
+                if (newsItem) {
+                    document.getElementById('newsModalTitle').textContent = newsItem.title;
+                    document.getElementById('newsModalDate').textContent = newsItem.date;
+                    document.getElementById('newsModalImage').src = newsItem.image + '.jpg';
+                    document.getElementById('newsModalImage').alt = newsItem.title;
+                    document.getElementById('newsModalImageWebp').srcset = newsItem.image + '.webp';
+                    document.getElementById('newsModalContent').innerHTML = newsItem.fullContent.split('\n').map(p => `<p>${p}</p>`).join(''); // Simple paragraph split
+
+                    newsModal.classList.remove('hidden');
+                    document.body.classList.add('overflow-hidden'); // Lock scroll
+                    setTimeout(() => {
+                        newsModal.classList.add('opacity-100');
+                        newsModal.querySelector('div').classList.remove('scale-95', 'opacity-0');
+                        newsModal.querySelector('div').classList.add('scale-100', 'opacity-100');
+                    }, 10);
+                    lucide.createIcons(); // Re-render icons in modal
+                }
+            });
+        });
+
+        document.getElementById('closeNewsModal').addEventListener('click', () => {
+            newsModal.classList.remove('opacity-100');
+            newsModal.querySelector('div').classList.remove('scale-100', 'opacity-100');
+            newsModal.querySelector('div').classList.add('scale-95', 'opacity-0');
+            newsModal.addEventListener('transitionend', () => {
+                newsModal.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }, { once: true });
+        });
+
+        // Close modal when clicking outside
+        newsModal.addEventListener('click', (e) => {
+            if (e.target === newsModal) {
+                document.getElementById('closeNewsModal').click();
+            }
+        });
+
+
+        // --- Form Handling & Validation ---
+
+        // Registration Form
+        const registrationForm = document.getElementById('registrationForm');
+        const submitRegistrationButton = document.getElementById('submitRegistration');
+        const registrationButtonText = document.getElementById('registrationButtonText');
+        const registrationSpinner = document.getElementById('registrationSpinner');
+
+        registrationForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Simple client-side validation
+            let isValid = true;
+            const nama = document.getElementById('nama');
+            const email = document.getElementById('email_daftar');
+            const telepon = document.getElementById('telepon');
+            const programStudi = document.getElementById('program_studi');
+
+            // Reset error states
+            [nama, email, telepon, programStudi].forEach(input => {
+                input.classList.remove('border-red-500');
+                input.nextElementSibling && input.nextElementSibling.remove(); // Remove old error messages
+            });
+
+            if (nama.value.trim() === '') {
+                showValidationError(nama, 'Nama lengkap tidak boleh kosong.');
+                isValid = false;
+            }
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+                showValidationError(email, 'Format email tidak valid.');
+                isValid = false;
+            }
+            if (!/^\d+$/.test(telepon.value) || telepon.value.length < 8) {
+                showValidationError(telepon, 'Nomor telepon harus angka dan minimal 8 digit.');
+                isValid = false;
+            }
+            if (programStudi.value === '') {
+                showValidationError(programStudi, 'Pilih program studi.');
+                isValid = false;
+            }
+
+
+            if (isValid) {
+                // Show spinner and disable button
+                registrationButtonText.textContent = 'Memproses...';
+                registrationSpinner.classList.remove('hidden');
+                submitRegistrationButton.disabled = true;
+
+                // Simulate API call
+                setTimeout(() => {
+                    showNotification('Pendaftaran berhasil! Tim kami akan segera menghubungi Anda.', 'success');
+                    registrationForm.reset(); // Clear form
+                    // Restore button state
+                    registrationButtonText.textContent = 'Daftar Sekarang';
+                    registrationSpinner.classList.add('hidden');
+                    submitRegistrationButton.disabled = false;
+                }, 2000);
+            } else {
+                showNotification('Mohon lengkapi semua bidang yang diperlukan dengan benar.', 'error');
+            }
+        });
+
+        // Contact Form
+        const contactForm = document.getElementById('contactForm');
+        const submitContactButton = document.getElementById('submitContact');
+        const contactButtonText = document.getElementById('contactButtonText');
+        const contactSpinner = document.getElementById('contactSpinner');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Simple client-side validation
+            let isValid = true;
+            const nama = document.getElementById('nama_kontak');
+            const email = document.getElementById('email_kontak');
+            const pesan = document.getElementById('pesan');
+
+            // Reset error states
+            [nama, email, pesan].forEach(input => {
+                input.classList.remove('border-red-500');
+                input.nextElementSibling && input.nextElementSibling.remove(); // Remove old error messages
+            });
+
+            if (nama.value.trim() === '') {
+                showValidationError(nama, 'Nama tidak boleh kosong.');
+                isValid = false;
+            }
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+                showValidationError(email, 'Format email tidak valid.');
+                isValid = false;
+            }
+            if (pesan.value.trim() === '') {
+                showValidationError(pesan, 'Pesan tidak boleh kosong.');
+                isValid = false;
+            }
+
+            if (isValid) {
+                // Show spinner and disable button
+                contactButtonText.textContent = 'Mengirim...';
+                contactSpinner.classList.remove('hidden');
+                submitContactButton.disabled = true;
+
+                // Simulate API call
+                setTimeout(() => {
+                    showNotification('Pesan Anda berhasil terkirim! Terima kasih.', 'success');
+                    contactForm.reset(); // Clear form
+                    // Restore button state
+                    contactButtonText.textContent = 'Kirim Pesan';
+                    contactSpinner.classList.add('hidden');
+                    submitContactButton.disabled = false;
+                }, 2000);
+            } else {
+                showNotification('Mohon lengkapi semua bidang yang diperlukan dengan benar.', 'error');
+            }
+        });
+
+        function showValidationError(inputElement, message) {
+            inputElement.classList.add('border-red-500');
+            const errorMessage = document.createElement('p');
+            errorMessage.className = 'text-red-500 text-sm mt-1';
+            errorMessage.textContent = message;
+            inputElement.parentNode.insertBefore(errorMessage, inputElement.nextSibling);
+        }
+
+        // --- Login Modal (Example) ---
+        const loginModal = document.getElementById('loginModal');
+        const closeLoginModalButton = document.getElementById('closeLoginModal');
+        const loginForm = document.getElementById('loginForm');
+        const submitLoginButton = document.getElementById('submitLogin');
+        const loginButtonText = document.getElementById('loginButtonText');
+        const loginSpinner = document.getElementById('loginSpinner');
+
+        // You might have a button to open the login modal, e.g., in your header
+        // const openLoginModalButton = document.getElementById('openLoginModal');
+        // if (openLoginModalButton) {
+        //     openLoginModalButton.addEventListener('click', () => {
+        //         loginModal.classList.remove('hidden');
+        //         document.body.classList.add('overflow-hidden');
+        //         setTimeout(() => {
+        //             loginModal.classList.add('opacity-100');
+        //             loginModal.querySelector('div').classList.remove('scale-95', 'opacity-0');
+        //             loginModal.querySelector('div').classList.add('scale-100', 'opacity-100');
+        //         }, 10);
+        //     });
+        // }
+
+
+        closeLoginModalButton.addEventListener('click', () => {
+            loginModal.classList.remove('opacity-100');
+            loginModal.querySelector('div').classList.remove('scale-100', 'opacity-100');
+            loginModal.querySelector('div').classList.add('scale-95', 'opacity-0');
+            loginModal.addEventListener('transitionend', () => {
+                loginModal.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }, { once: true });
+        });
+
+        // Close modal when clicking outside
+        loginModal.addEventListener('click', (e) => {
+            if (e.target === loginModal) {
+                closeLoginModalButton.click();
+            }
+        });
+
+
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Simple validation
+            const username = document.getElementById('username');
+            const password = document.getElementById('password');
+            let isValid = true;
+
+            // Reset error states
+            [username, password].forEach(input => {
+                input.classList.remove('border-red-500');
+                input.nextElementSibling && input.nextElementSibling.remove();
+            });
+
+            if (username.value.trim() === '') {
+                showValidationError(username, 'Username tidak boleh kosong.');
+                isValid = false;
+            }
+            if (password.value.trim() === '') {
+                showValidationError(password, 'Password tidak boleh kosong.');
+                isValid = false;
+            }
+
+            if (isValid) {
+                loginButtonText.textContent = 'Logging in...';
+                loginSpinner.classList.remove('hidden');
+                submitLoginButton.disabled = true;
+
+                // Simulate API call
+                setTimeout(() => {
+                    const enteredUsername = username.value;
+                    const enteredPassword = password.value;
+
+                    if (enteredUsername === 'user' && enteredPassword === 'password') { // Contoh kredensial
+                        showNotification('Login berhasil! Selamat datang.', 'success');
+                        loginForm.reset();
+                        closeLoginModalButton.click(); // Close modal on success
+                    } else {
+                        showNotification('Username atau password salah.', 'error');
+                        username.classList.add('border-red-500');
+                        password.classList.add('border-red-500');
+                    }
+                    loginButtonText.textContent = 'Login';
+                    loginSpinner.classList.add('hidden');
+                    submitLoginButton.disabled = false;
+                }, 1500);
+            } else {
+                showNotification('Mohon masukkan username dan password.', 'error');
+            }
+        });
+
+        // --- Update Current Year in Footer ---
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // --- FAQ Toggle (If you decide to enable it) ---
+        // const faqQuestions = document.querySelectorAll('#faq button');
+        // faqQuestions.forEach(button => {
+        //     button.addEventListener('click', () => {
+        //         const answer = document.getElementById(button.getAttribute('aria-controls'));
+        //         const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        //         button.setAttribute('aria-expanded', !isExpanded);
+        //         answer.classList.toggle('hidden');
+        //         button.querySelector('i').classList.toggle('rotate-180'); // Rotate chevron icon
+        //     });
+        // });
+
+    </script>
+    </body>
+</html>
